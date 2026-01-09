@@ -1,0 +1,6 @@
+# For deleting previous word
+"\C-H":backward-kill-word
+"\C-?":backward-kill-word
+
+# Turn off bell
+set bell-style none
