@@ -8,5 +8,5 @@ alias .5='cd ../../../../..'
 # Prompt before overwrite
 alias cp='cp -i'
 
-# Dev mount
+# Windows dev mount
 alias mnt='cd /mnt/c/Users/jkrod/dev'
