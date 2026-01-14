@@ -7,7 +7,7 @@ These dotfiles are intended to be used on a WSL Ubuntu setup using Windows Termi
 On a fresh installation of WSL Ubuntu:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/jkrodocker/dotfiles/remote-install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/jkrodocker/dotfiles/main/remote_install.sh | bash
 ```
 
 Or, if `curl` isn't available, instead clone directly into the desired location:
