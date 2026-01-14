@@ -1,12 +1,16 @@
+#!/usr/bin/env bash
 # ================================================================================
 # remote_install.sh
 # ================================================================================
-# This script sets up from a clean installation of WSL Ubuntu, but should be
-# idempotent. This can be pulled by itself and run to automatically pull and
-# configure the remainder of the setup.
+# This script pulls the dotfiles to the current system, and is intended to be used
+# on a clean install of WSL Ubuntu.
 # ================================================================================
 
-# Update and upgrade all packages
-sudo apt update && sudo apt upgrade -y
+SOURCE="https://github.com/jkrodocker/dotfiles"
+TARGET="${HOME}/.dotfiles"
 
-# TODO: Retrieve dotfiles
+# Retrieve dotfiles
+if ! git clone ${SOURCE} ${TARGET}; then
+    echo "Failed to download jkrodocker/dotfiles. Exiting."
+    kill $$
+fi
