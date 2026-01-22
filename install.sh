@@ -26,10 +26,19 @@ create_symlinks() {
     done
 }
 
+configure_wsl() {
+    # Replace /etc/wsl.conf for current WSL instance
+
+}
+
 main() {
+    # TODO: Establish way to automatically distinguish between Linux Mint setup and WSL setup
+    case "$OSTYPE" in
+        linux*)
+            ;;
+    esac
 
-
-    create_symlinks
+    #create_symlinks
 }
 
 main "$@"
