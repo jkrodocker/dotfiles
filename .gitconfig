@@ -2,9 +2,11 @@
 	defaultBranch = main
 [user]
 	name = John Rodocker
-	email = 173859060+jkrodocker@users.noreply.github.com
+	email = johnkrodocker@gmail.com
 [credential]
 	helper = store --file ~/.gitconfig-credential
 [core]
 	autoCRLF = false
-	editor = code --wait
+	editor = codium --wait
+[pull]
+	rebase = false
