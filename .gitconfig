@@ -8,5 +8,3 @@
 [core]
 	autoCRLF = false
 	editor = codium --wait
-[pull]
-	rebase = false
