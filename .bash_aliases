@@ -10,6 +10,3 @@ alias lh='ls -lah'
 
 # Prompt before overwrite
 alias cp='cp -i'
-
-# Windows dev mount
-alias mnt='cd /mnt/c/Users/jkrod/dev'
