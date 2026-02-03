@@ -7,4 +7,4 @@
 	helper = store --file ~/.gitconfig-credential
 [core]
 	autoCRLF = false
-	editor = codium --wait
+	editor = code --wait
