@@ -14,3 +14,8 @@ if ! git clone ${SOURCE} ${TARGET}; then
     echo "Failed to download jkrodocker/dotfiles. Exiting."
     kill $$
 fi
+
+# Run install script
+INSTALL="{TARGET}/install.sh"
+chmod +x ${INSTALL}
+./${INSTALL}
