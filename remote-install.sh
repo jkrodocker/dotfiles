@@ -2,8 +2,8 @@
 # ================================================================================
 # remote_install.sh
 # ================================================================================
-# This script pulls the dotfiles to the current system, and is intended to be used
-# on a clean install of WSL Ubuntu.
+# This script pulls the dotfiles to the current system and runs the install
+# script.
 # ================================================================================
 
 SOURCE="https://github.com/jkrodocker/dotfiles"
