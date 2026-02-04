@@ -19,7 +19,7 @@ EOF
 # Handle options
 dry_run=0
 
-while getopts hd: opt; do
+while getopts hd opt; do
     case $opt in
         h)
             show_help
@@ -73,12 +73,14 @@ create_symlinks() {
                 fi
             fi
 
-            # TODO: CHECK IF PREFORMING DRY-RUN BEFORE REAL LINK BELOW
-            # ln -sfn "$PWD/$source_file" "$target_file"
+            # Check if performing dry-run before creating symlink
+            if [ $dry_run = 0 ]; then
+                ln -sfn "$PWD/$source_file" "$target_file"
+            fi
 
             printf "    %s --> %s/%s\n" "$target_file" "$PWD" "$source_file" >&2
         else
-            printf "Could not find %s\n" "$source_file" >&2
+            printf "Could not find %s, skipping.\n" "$source_file" >&2
         fi
     done
 }
