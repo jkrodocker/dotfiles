@@ -111,5 +111,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Cargo
-. "$HOME/.cargo/env"
+# cargo environment variable setup
+if [ -e "$HOME/.cargo/env" ]; then
+    . "$HOME/.cargo/env"
+fi
